@@ -4,6 +4,7 @@ import { chatSession } from '../../../utils/geminiAi';
 
 export async function POST(req) {
   try {
+    await mongooseConnection();
     // Parse the request body using req.json()
     const { jobPosition, jobDesc, jobExperience, createdBy } = await req.json();
 
