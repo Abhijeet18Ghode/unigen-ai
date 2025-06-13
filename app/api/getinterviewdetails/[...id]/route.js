@@ -1,6 +1,6 @@
+import mongoose from 'mongoose';
 import mongooseConnection from '../../../../lib/mongoose';
 import mockInterviewSchema from '../../../../model/mockInterview';
-
 export async function GET(req, { params }) {
   try {
     // Connect to MongoDB
